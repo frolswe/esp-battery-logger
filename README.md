@@ -5,21 +5,21 @@ chip to test the possibility of battery powered sensors.
 
 Requirements
 ------------
-### [http://hackaday.com/2015/02/08/hack-allows-esp-01-to-go-to-deep-sleep/](XPD_DCDC connected to the reset pin)
+### [XPD_DCDC connected to the reset pin](http://hackaday.com/2015/02/08/hack-allows-esp-01-to-go-to-deep-sleep/)
 The XPD_DCDC pin on the esp8266 chip must be connected to the reset
 pin. Some esp modules (esp-01) requires soldering this connection
 directly on the chip.
 
-### [https://github.com/pfalcon/esp-open-sdk](esp-open-sdk)
+### [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk)
 This SDK and compiler. Clone and build this repository and edit the
 Makefile with the correct path.
 
-### [https://github.com/tuanpmt/esp_mqtt.git](esp_mqtt)
+### [esp_mqtt](https://github.com/tuanpmt/esp_mqtt.git)
 Cloned using git submodules. Used for sending battery status to an
 MQTT server. Also the Makefile and uart driver from esp_mqtt is used
 in this project.
 
-### [https://github.com/themadinventor/esptool.git](esptool)
+### [esptool](https://github.com/themadinventor/esptool.git)
 Tool used for the final parts of the firmware build process and to
 flash it to the chip. Cloned using git submodules.
 
