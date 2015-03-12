@@ -3,6 +3,8 @@ esp-battery-logger
 Simple project for the esp8266 using the power saving features of the
 chip to test the possibility of battery powered sensors.
 
+![esp-photo](https://pbs.twimg.com/media/B_P5WMMUoAMHy9B.jpg:large)
+
 Requirements
 ------------
 ### [XPD_DCDC connected to the reset pin](http://hackaday.com/2015/02/08/hack-allows-esp-01-to-go-to-deep-sleep/)
@@ -28,7 +30,7 @@ Build process
 1. Clone and build esp-open-sdk.  
    `$ cd esp-open-sdk && make`
 2. Checkout the git submodules.  
-   `$ git submodule init`
+   `$ git submodule init`  
    `$ git submodule update`
 3. Make sure PATH includes the newly built toolchain.  
    `$ export PATH=$PATH:/path/to/esp-open-sdk/xtensa-lx106-elf/bin`
