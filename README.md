@@ -5,6 +5,17 @@ chip to test the possibility of battery powered sensors.
 
 ![esp-photo](https://pbs.twimg.com/media/B_P5WMMUoAMHy9B.jpg:large)
 
+The experiment is over for now.  A network / server miss-hap consumed
+lots of energy due to the firmware not properly entering deep sleep
+when it failed to connect to the server.  The module died after less
+than a week. When I measured the batteries 12 hours after the module
+stopped uploading, they were completely drained.  Even if everything
+had worked as I hoped, I estimate that the batteries would have lasted
+less than a month.  Anyway, I will test my luck again with a step-up
+regulator in the not too distant future.
+
+![voltage-plot](https://i.imgur.com/QqxGKGw.png)
+
 Requirements
 ------------
 ### [XPD_DCDC connected to the reset pin](http://hackaday.com/2015/02/08/hack-allows-esp-01-to-go-to-deep-sleep/)
