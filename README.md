@@ -16,7 +16,7 @@ So far I have run this experiment using four different setups:
    hoped, I estimate that the batteries would have lasted less than a
    month.
 
-2. 2xAA with a ![step-up converter](http://www.ebay.com/itm/mini-DC-DC-0-8-3-3V-to-DC-3-3V-Step-UP-Boost-Power-Module-For-Breadboard-Arduino-/281556288481?hash=item418e1003e1)
+2. 2xAA with a [step-up converter](http://www.ebay.com/itm/mini-DC-DC-0-8-3-3V-to-DC-3-3V-Step-UP-Boost-Power-Module-For-Breadboard-Arduino-/281556288481?hash=item418e1003e1)
    This worked for 33 days, and the battery voltage read using a
    multimeter just after the esp8266 stopped working was just below
    2.6 V.
@@ -25,12 +25,12 @@ So far I have run this experiment using four different setups:
    Connecting the batteries this way is out of spec for the esp8266,
    but in my experience it works.  This worked for 95 days!
 
-4. 1x186550 ![cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
+4. 1x186550 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
    I was expecting this to perform better, but it only worked for 17
    days.
 
 All AA batteries used are regular alkaline batteries. Most of them
-from ![Kjell & Company](http://www.kjell.com/sortiment/el/batterier/alkaliska/kjell-company-aa-batterier-%28lr6%29-20-pack-p32301)
+from [Kjell & Company](http://www.kjell.com/sortiment/el/batterier/alkaliska/kjell-company-aa-batterier-%28lr6%29-20-pack-p32301)
 
 ![voltage-plot](https://i.imgur.com/Jwh15rC.png)
 
