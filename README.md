@@ -25,9 +25,14 @@ So far I have run this experiment using four different setups:
    Connecting the batteries this way is out of spec for the esp8266,
    but in my experience it works.  This worked for 95 days!
 
-4. 1x186550 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
-   I was expecting this to perform better, but it only worked for 17
-   days.
+4. 1x18650 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
+   I messed up this test by using a not fully charged cell. It still
+   worked for 17 days, but this is not very useful data.
+
+5. 1x18650 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
+   With a [charger & protection circuit](http://www.ebay.com/itm/5V-Micro-USB-1A-18650-Lithium-Battery-Charging-Board-Charger-Module-Protection-/400665520672?hash=item5d4986aa20).
+   This time I made sure the cell was fully charged, and it has worked
+   much better so far (10+ days and still above 4.094 V).
 
 All AA batteries used are regular alkaline batteries. Most of them
 from [Kjell & Company](http://www.kjell.com/sortiment/el/batterier/alkaliska/kjell-company-aa-batterier-%28lr6%29-20-pack-p32301)
