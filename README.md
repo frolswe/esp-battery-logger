@@ -1,10 +1,32 @@
+Conclusion
+==========
+
+* 18650 Li-ion cell: approx 40 days per charge.
+* 3xAA alkaline betteries almost 100 days.
+
+After running five different setups, I think using a 18650 Li-ion cell
+with a charger / protection circuit is the best way for me. The 4.2
+volts from this setup is slightly out of spec for the esp8266 but in
+practice it has worked very reliably. It is also very convenient to be
+able to simply connect a charger when the batteries are empty.
+
+3xAA batteries lasts significantly longer, and is a good option. But I
+like the form factor and convenience of the 18650 cell better.
+
+![voltage-plot](https://i.imgur.com/eIuInXo.png)
+
 esp-battery-logger
 ==================
 Simple project for the esp8266 using the power saving features of the
-chip to test the possibility of battery powered sensors.
+chip to test the possibility of battery powered sensors. While
+generating the voltage logs, the esp8266 wakes up every 30 seconds
+doing basically nothing. Every 10 minutes, a WIFI-connection is made
+and the voltage level is uploaded to a MQTT server.
 
-![esp-photo](https://pbs.twimg.com/media/B_P5WMMUoAMHy9B.jpg:large)
+![photo of setup 5](https://pbs.twimg.com/media/CTJ5OL5UwAACq52.jpg:large)
 
+Setups
+======
 So far I have run this experiment using four different setups:
 
 1. 2xAA connected directly to the esp8266 as shown in the image above.
@@ -14,7 +36,7 @@ So far I have run this experiment using four different setups:
    measured the batteries 12 hours after the module stopped uploading,
    they were completely drained.  Even if everything had worked as I
    hoped, I estimate that the batteries would have lasted less than a
-   month.
+   month. [photo of setup 1](https://pbs.twimg.com/media/B_P5WMMUoAMHy9B.jpg:large)
 
 2. 2xAA with a [step-up converter](http://www.ebay.com/itm/mini-DC-DC-0-8-3-3V-to-DC-3-3V-Step-UP-Boost-Power-Module-For-Breadboard-Arduino-/281556288481?hash=item418e1003e1)
    This worked for 33 days, and the battery voltage read using a
@@ -25,19 +47,18 @@ So far I have run this experiment using four different setups:
    Connecting the batteries this way is out of spec for the esp8266,
    but in my experience it works.  This worked for 95 days!
 
-4. 1x18650 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
+4. 1x18650 [cheap E-bay Li-ion](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
    I messed up this test by using a not fully charged cell. It still
    worked for 17 days, but this is not very useful data.
 
-5. 1x18650 [cheap E-bay LiPo](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
+5. 1x18650 [cheap E-bay Li-ion](http://www.ebay.com/itm/2x-UltraFire-18650-6000mAh-Li-Ion-Rechargeable-3-7V-Battery-For-Torch-Flashlight-/381196017618?hash=item58c10d9fd2).
    With a [charger & protection circuit](http://www.ebay.com/itm/5V-Micro-USB-1A-18650-Lithium-Battery-Charging-Board-Charger-Module-Protection-/400665520672?hash=item5d4986aa20).
-   This time I made sure the cell was fully charged, and it has worked
-   much better so far (10+ days and still above 4.094 V).
+   This time I made sure the cell was fully charged... After running
+   the cell for two cycles, this setup lasts for about 40 days per
+   charge.
 
 All AA batteries used are regular alkaline batteries. Most of them
 from [Kjell & Company](http://www.kjell.com/sortiment/el/batterier/alkaliska/kjell-company-aa-batterier-%28lr6%29-20-pack-p32301)
-
-![voltage-plot](https://i.imgur.com/Jwh15rC.png)
 
 Requirements
 ------------
